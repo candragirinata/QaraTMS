@@ -41,7 +41,7 @@
 
             @can('add_edit_test_cases')
                 <button type="button" class="btn btn-outline-dark btn-sm"
-                        onclick="renderTestCaseEditForm({{$testCase->id}})">
+                        onclick="renderTestCaseEditForm('{{$testCase->id}}')">
                     <i class="bi bi-pencil"></i>
                 </button>
             @endcan

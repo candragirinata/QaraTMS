@@ -33,7 +33,7 @@
             </h3>
 
             <button type="button" class="btn btn-outline-dark btn-sm mb-2"
-                    onclick="renderTestCaseEditForm({{$testCase->id}})">
+                    onclick="   ({{$testCase->id}})">
                 <i class="bi bi-pencil px-1"></i>
             </button>
 
