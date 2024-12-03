@@ -11,7 +11,7 @@
             <h3 class="page_title">
                 @if($testCase->priority == \App\Enums\CasePriority::LOW)
                     <i class="bi bi-chevron-double-down text-warning"></i>
-                @elseif($testCase->priority == \App\Enums\CasePriority::NORMAL)
+                @elseif($testCase->priority == \App\Enums\CasePriority::MEDIUM)
                     <i class="bi bi-list text-info"></i>
                 @elseif($testCase->priority == \App\Enums\CasePriority::HIGH)
                     <i class="bi bi-chevron-double-up text-danger"></i>
@@ -57,7 +57,7 @@
 
                     @if(isset($data->steps) && !empty($data->steps))
                         <strong class="fs-5 pb-3">Steps</strong>
-                        <div class="row mb-3 border p-3 rounded" id="steps_container">
+                        <div class="row mb-3 border p-3 mt-1 rounded" id="steps_container">
 
 
                             <div class="row step pb-2 mb-2">
